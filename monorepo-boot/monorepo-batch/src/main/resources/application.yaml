@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+
+  application:
+    name: monorepo-batch
+
+  config:
+    import:
+      - application-exposed.yaml
+
+  batch:
+    jdbc:
+      initialize-schema: never

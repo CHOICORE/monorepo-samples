@@ -1,0 +1,27 @@
+spring.config.activate.on-profile: local
+spring:
+  datasource:
+    driver-class-name: ${monorepo.datasource.driver-class-name:org.mariadb.jdbc.Driver}
+    url: ${monorepo.datasource.url:jdbc:mariadb://localhost:3306/monorepo}
+    username: ${monorepo.datasource.username:user}
+    password: ${monorepo.datasource.password:secret}
+
+---
+spring.config.activate.on-profile: dev
+spring:
+  datasource:
+    driver-class-name: ${monorepo.datasource.driver-class-name:org.mariadb.jdbc.Driver}
+    url: ${monorepo.datasource.url:jdbc:mariadb://localhost:3306/monorepo}
+    username: ${monorepo.datasource.username:user}
+    password: ${monorepo.datasource.password:secret}
+
+---
+spring.config.activate.on-profile: prod
+spring:
+  datasource:
+    driver-class-name: ${monorepo.datasource.driver-class-name:org.mariadb.jdbc.Driver}
+    url: ${monorepo.datasource.url:jdbc:mariadb://localhost:3306/monorepo}
+    username: ${monorepo.datasource.username:user}
+    password: ${monorepo.datasource.password:secret}
+
+---

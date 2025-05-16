@@ -1,0 +1,7 @@
+spring:
+  config:
+    import:
+      - application-datasource.yaml
+  exposed:
+    show-sql: true
+    generate-ddl: false
